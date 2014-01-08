@@ -7,20 +7,21 @@ public class AnalizaPodatkov {
         // TODO code application logic here
     } 
         
-        public double vsotaSodihStevil(int[] polje){
+        public double PovprecnaVrednost(int[] polje){
        
         int sum = 0;
         
         for (int i = 0; i < polje.length; i++){
         sum = sum + polje[i];
     }
-<<<<<<< HEAD
+        
         double povprecna = sum / polje.length;
         
         System.out.println("povprecna: " + povprecna);
         
         return povprecna;
-=======
+        }
+
     
     public int vsotaSodihStevil(int[] polje){
 	int temp = 0;
@@ -107,9 +108,6 @@ public class AnalizaPodatkov {
         
         return prastevila;
     }
->>>>>>> 5cfd77742f7c1c3019789aed7e76740596dd522a
 }
-   
-    }   
 
          
