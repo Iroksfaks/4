@@ -12,6 +12,6 @@ import org.junit.runners.Suite;
  * @author Jerry
  */
 @RunWith(Suite.class)
-@Suite.SuiteClasses({veckratnikovStevilaSedemTest.class, vrniPoljeStevilKiSoPrastevila.class, jePraStevilo.class})
+@Suite.SuiteClasses({veckratnikovStevilaSedemTest.class, vrniPoljeStevilKiSoPrastevila.class, jePraStevilo.class, vsotaSodihStevil.class})
 public class VsiTesti {
 }

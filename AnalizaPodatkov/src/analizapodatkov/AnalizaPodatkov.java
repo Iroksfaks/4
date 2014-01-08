@@ -12,8 +12,8 @@ public class AnalizaPodatkov {
         int sum = 0;
         
         for (int i = 0; i < polje.length; i++){
-        sum = sum + polje[i];
-    }
+            sum = sum + polje[i];
+        }
         
         double povprecna = sum / polje.length;
         

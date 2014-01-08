@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 
+import analizapodatkov.AnalizaPodatkov;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -16,9 +17,13 @@ public class vsotaSodihStevil {
     public vsotaSodihStevil() {
     }
 
-    // TODO add test methods here.
-    // The methods must be annotated with annotation @Test. For example:
-    //
-    // @Test
-    // public void hello() {}
+    
+    @Test
+    public void glavnoDelovanje() {
+        AnalizaPodatkov analiza = new AnalizaPodatkov();
+        int[] polje = {1, 2, 3, 4, 5, 6, 7, 8};
+        int[] polje2 = {1, 2, 3, 4, 5, 6, 7, -8};
+        assertEquals(20, analiza.vsotaSodihStevil(polje), 0);
+        assertEquals(4, analiza.vsotaSodihStevil(polje2), 0);
+    }
 }
