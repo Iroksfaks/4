@@ -19,4 +19,28 @@ public class AnalizaPodatkov {
         // TODO code application logic here
     }
     
+    
+    public int vsotaSodihStevil(int[] polje){
+	int temp = 0;
+	for(int i: polje){
+		if(i % 2 == 0){
+			temp += i;
+		}
+	}
+	return temp;
+}
+
+public  double razmerjeMedVsotoSodihInVsotoLihihStevil(int[] polje){
+	int vsotaSodih = 0;
+	int vsotaLihih = 0;
+	for(int i: polje){
+		if(i % 2 == 0){
+			vsotaSodih += i;
+		} else {
+			vsotaLihih += i;
+		}
+	}
+	return (double)vsotaSodih / (double)vsotaLihih;
+}
+    
 }
