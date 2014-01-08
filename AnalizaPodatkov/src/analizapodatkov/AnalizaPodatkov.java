@@ -17,6 +17,56 @@ public class AnalizaPodatkov {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+    } 
+        
+       public static double vsotaSodihStevil(int[] polje){
+       
+        int sum = 0;
+        
+        for (int i = 0; i < polje.length; i++){
+        sum = sum + polje[i];
+    }
+        double povprecna = sum / polje.length;
+        
+        System.out.println("povprecna: " + povprecna);
+        
+        return povprecna;
+}
     }
     
-}
+    
+  //  public double vsotaSodihStevil(int[] polje){
+       
+   //     int sum = 0;
+        
+   //     for (int i = 0; i < polje.length; i++){
+    //    sum = sum + polje[i];
+   // }
+     //   double povprecna = sum / polje.length;
+  // / ///    
+      //  System.out.println("povprecna: " + povprecna);
+        
+      ///  return povprecna;
+//}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+//}
+        
+   
+    
+    
+    
+    
+    
+    
+
