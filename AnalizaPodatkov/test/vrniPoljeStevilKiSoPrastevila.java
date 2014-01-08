@@ -14,18 +14,17 @@ import static org.junit.Assert.*;
  *
  * @author Jerry
  */
-public class veckratnikovStevilaSedemTest {
+public class vrniPoljeStevilKiSoPrastevila {
     
-    public veckratnikovStevilaSedemTest() {
+    public vrniPoljeStevilKiSoPrastevila() {
     }
-
-    @Test 
-    public void glavnoDelovanje (){
+    
+    @Test
+    public void glavnoDelovanje() {
         AnalizaPodatkov analiza = new AnalizaPodatkov();
-        int[] polje  = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 21, 28, 29, 15};
-        int[] pricakovano = {7, 14, 21, 28};
+        int[] pricakovano = {19, 23, 29, 31, 37};
+        int[] polje = {4, 12, 19, 44, 23, 99, 29, 34, 31, 37};
         
-        assertArrayEquals(pricakovano, analiza.vrniPoljeSamoVeckratnikovStevilaSedem(polje));
+        assertArrayEquals(pricakovano, analiza.vrniPoljeStevilKiSoPrastevila(polje));
     }
 }
-
